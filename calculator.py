@@ -12,7 +12,6 @@ def function(value):
         res.config(text="0")
         last_equals[0] = False
     elif value == '=':
-        try:
             res.config(text=str(eval(txt)))
             last_equals[0] = True
     else:

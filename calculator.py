@@ -15,8 +15,6 @@ def function(value):
         try:
             res.config(text=str(eval(txt)))
             last_equals[0] = True
-        except:
-            res.config(text="Error")
     else:
         if last_equals[0]:
             txt = "0" if value.isdigit() or value == '.' else txt
